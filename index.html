@@ -36,6 +36,10 @@
             font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
             font-size: 20px;
         }
+
+        .code {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 
@@ -77,8 +81,8 @@
                     </a>
                 
                     <div class="lead text-center">University Projects</div>
-                
-                    <a class="btn btn-light" role="button" aria-disabled="true" target="_blank" href="https://github.com/fang-wei-jie/scbms-demo#readme">
+
+                    <button type="button" class="btn btn-light" id="scbmsButton" data-bs-toggle="modal" data-bs-target="#scbms">
                         <div class="row align-items-center">
                             <div class="col-auto">
                                 <i class="bi bi-github"></i>
@@ -88,7 +92,7 @@
                                 <small>Booking Management System made with Laravel 8</small>
                             </div>
                         </div>
-                    </a>
+                    </button>
                     
                     <a class="btn btn-light" role="button" aria-disabled="true" target="_blank" href="https://www.figma.com/proto/22hkRIM7Fq6vq4PFxTgRjU/HCI-Website-Project?page-id=0%3A1&node-id=75%3A2&viewport=241%2C48%2C0.08&scaling=min-zoom&starting-point-node-id=75%3A2   ">
                         <div class="row align-items-center">
@@ -117,6 +121,45 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="modal fade" id="scbms" tabindex="-1" role="dialog" aria-labelledby="scbmsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title" id="titleLabel">Readme first</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div>Reduced Functionality Notice</div>
+                    <small>
+                        The auto removal of "unpaid" bookings is not turned on on this system as it requires a paid plan to do so. When hosted
+                        on a server, by default, the operation is caried out every single minute, locally, using the <span class="code">php artisan schedule:run</span>
+                        command.
+                    </small>
+                    
+                    <br>
+
+                    <div>Demo Accounts</div>
+                    <small>
+                        <ul>
+                            <li>Please DO NOT change credentials for the following default accounts</li>
+                            <li>You may create the customer account yourself at the register page</li>
+                            <li>Please DO NOT change the DOMAIN in the settings panel</li>
+                            <li>Manager Account <span class="code">ID: demo@nescm, password: password</span></li>
+                            <li>Staff Account <span class="code">ID: demo@nesc, password: password</span></li>
+                        </ul>
+                    </small>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" role="button" aria-disabled="true" target="_blank" href="https://scbms.herokuapp.com/">
+                        Visit the app&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
