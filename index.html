@@ -40,6 +40,10 @@
         .code {
             background-color: #f1f1f1;
         }
+
+        .warning-text {
+            color: red;
+        }
     </style>
 </head>
 
@@ -125,7 +129,7 @@
 
     <div class="modal fade" id="scbms" tabindex="-1" role="dialog" aria-labelledby="scbmsLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="modal-title" id="titleLabel">Readme first</span>
@@ -145,9 +149,9 @@
                     <div>Demo Accounts</div>
                     <small>
                         <ul>
-                            <li>Please DO NOT change credentials for the following default accounts</li>
+                            <li>Please <span class="warning-text">DO NOT</span> change credentials for the following default accounts</li>
+                            <li>Please <span class="warning-text">DO NOT</span> change the DOMAIN in the settings panel</li>
                             <li>You may create the customer account yourself at the register page</li>
-                            <li>Please DO NOT change the DOMAIN in the settings panel</li>
                             <li>Manager Account <span class="code">ID: demo@nescm, password: password</span></li>
                             <li>Staff Account <span class="code">ID: demo@nesc, password: password</span></li>
                         </ul>
@@ -157,7 +161,7 @@
                     <a class="btn btn-primary" role="button" aria-disabled="true" target="_blank" href="https://scbms.herokuapp.com/">
                         Visit the app&nbsp;<i class="bi bi-box-arrow-up-right"></i>
                     </a>
-                </div>
+                </div>            
             </div>
         </div>
     </div>
