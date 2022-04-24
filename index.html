@@ -34,22 +34,25 @@
 
         html {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
-            font-size: 20px;
         }
-
+        
         .code {
             background-color: #f1f1f1;
         }
-
+        
         .warning-text {
             color: red;
+        }
+        
+        #landing > div .btn {
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container my-5">
+    <div class="container my-5" id="landing">
         
         <picture>
             <source srcset="resources/potrait.webp" type="image/webp">
@@ -137,11 +140,10 @@
                 </div>
     
                 <div class="modal-body">
-                    <div>Reduced Functionality Notice</div>
+                    <div>Limitations of This Demo</div>
                     <small>
-                        The auto removal of "unpaid" bookings is not turned on on this system as it requires a paid plan to do so. When hosted
-                        on a server, by default, the operation is caried out every single minute, locally, using the <span class="code">php artisan schedule:run</span>
-                        command.
+                        Auto removal of "unpaid" bookings after a defined period of minutes is not available, as such operations with such frequencey requires a paid plan to do so. 
+                        When hosted on a server, the operation is caried out every single minute using the <span class="code">php artisan schedule:run</span> command.
                     </small>
                     
                     <br>
@@ -157,7 +159,7 @@
                         </ul>
                     </small>
 
-                    <div class="alert alert-danger" role="alert">
+                    <!-- <div class="alert alert-danger" role="alert">
 
                         <div class="row align-items-center">
                             <div class="col-auto">
@@ -168,12 +170,11 @@
                                 <small>Caused by the issue mentioned above, a fix to the system was not able to merge. You may still venture the app, but you may find the pricing at the booking confirmation page and payment page to be incorrect. </small>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="modal-footer">
-                
-                    <a class="btn btn-danger" role="button" aria-disabled="true" target="_blank" href="https://scbms.herokuapp.com/">
-                        I acknowledge the bug exist, visit the app&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+                    <a class="btn btn-primary" role="button" aria-disabled="true" target="_blank" href="https://scbms.herokuapp.com/">
+                        Visit the app&nbsp;<i class="bi bi-box-arrow-up-right"></i>
                     </a>
                 </div>            
             </div>
