@@ -11,7 +11,7 @@ export class ProjectsComponent {
     {
       name: "Sport Center Booking Managing System",
       description: "Booking Management System made with Laravel 8",
-      techStack: ["Laravel", "Bootstrap"],
+      techStack: ["Laravel 8", "Bootstrap 5"],
       link: undefined
     },
     {
