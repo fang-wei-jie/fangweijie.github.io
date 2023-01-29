@@ -1,0 +1,16 @@
+<!--<div class="h-auto w-full bg-white rounded-xl drop-shadow-lg hover:drop-shadow-2xl ease-linear duration-300">-->
+<div class="flex justify-center">
+  <div class="px-auto h-auto w-full lg:w-9/12 bg-white rounded-xl drop-shadow-lg select-none ease-in-out duration-300">
+    <div class="p-5 grid gap-2">
+      <p class="text-3xl font-semibold">{{ project.name }}</p>
+      <p class="text-lg font-semibold">{{ project.description }}</p>
+      <div class="flex flex-wrap gap-2" *ngIf="project.techStack.length > 0">
+        <p *ngFor="let stack of project.techStack">{{ stack }}</p>
+      </div>
+      <a class="w-auto flex items-center gap-1 hover:font-semibold ease-in-out duration-300"
+         [href]="project.link" target="_blank" *ngIf="project.link">
+        Link<span class="material-symbols-rounded">open_in_new</span>
+      </a>
+    </div>
+  </div>
+</div>
