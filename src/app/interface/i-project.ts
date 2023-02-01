@@ -1,6 +1,6 @@
 export interface IProject {
   name: String,
   description: String,
-  techStack: String[],
+  techStacks: String[],
   link: String | undefined
 }

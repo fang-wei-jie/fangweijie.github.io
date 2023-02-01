@@ -14,7 +14,9 @@ export class SkillsComponent {
 
   readonly technologies: ISkill[] = [
     { link: "/assets/skills/angular.png", name: "Angular" },
-    { link: "/assets/skills/spring-boot.png", name: "Spring Boot" }
+    { link: "/assets/skills/spring-boot.png", name: "Spring Boot" },
+    { link: "/assets/skills/tailwind-css.png", name: "Tailwind CSS" },
+    { link: "/assets/skills/ng-zorro.png", name: "NG-ZORRO" }
   ]
 
   readonly tools: ISkill[] = [
