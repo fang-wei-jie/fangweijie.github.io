@@ -9,7 +9,7 @@ import {IExperience} from "../../interface/i-experience";
 export class ExperiencesComponent {
   readonly experiences: IExperience[] = [
     {
-      title: "IT Specialist",
+      title: "Software Engineer, IT Specialist",
       company: "iFast Capital Sdn. Bhd.",
       duration: "Sep 2022 - Present",
       description: [
