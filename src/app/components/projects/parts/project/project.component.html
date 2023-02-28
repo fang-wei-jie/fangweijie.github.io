@@ -9,7 +9,8 @@
       </div>
       <a class="w-auto flex items-center gap-1 hover:font-semibold ease-in-out duration-300"
          [href]="project.link" target="_blank" *ngIf="project.link">
-        Link<span class="material-symbols-rounded">open_in_new</span>
+        {{ project.linkName ? project.linkName : 'Link' }}
+        <span class="material-symbols-rounded">open_in_new</span>
       </a>
     </div>
   </div>
