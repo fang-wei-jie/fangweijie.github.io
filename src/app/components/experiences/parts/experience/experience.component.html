@@ -2,21 +2,21 @@
   <div class="px-auto h-auto w-full bg-white rounded-xl drop-shadow-lg select-none ease-in-out duration-300">
     <div class="p-5 grid gap-2">
       <div class="flex flex-col md:flex-row gap-2 justify-between align-top">
-        <p class="text-3xl font-semibold">{{ experience.title }}</p>
-        <p class="text-xl font-semibold">{{ experience.duration }}</p>
+        <p class="text-xl font-semibold">
+          <span>{{ experience.title }}</span>
+          <span class="text-[{{experience.color}}]"> @ {{ experience.company }}</span>
+        </p>
+        <p class="text-lg">{{ experience.duration }}</p>
       </div>
-      <p class="text-xl font-semibold">{{ experience.company }}</p>
+
       <p class="text-md font-semibold">What I've Done</p>
       <ol class="px-5 list-decimal">
         <li *ngFor="let paragraph of experience.description">{{ paragraph }}</li>
       </ol>
-      <p class="text-md font-semibold" *ngIf="experience.techStacks.length > 0">Skills</p>
-<!--      <div class="flex flex-wrap gap-2" *ngIf="experience.techStacks.length > 0">-->
-<!--        <p *ngFor="let stack of experience.techStacks">{{ stack }}</p>-->
-<!--      </div>-->
-      <ol class="px-5 list-decimal" *ngIf="experience.techStacks.length > 0">
-        <li *ngFor="let stack of experience.techStacks">{{ stack }}</li>
-      </ol>
+
+      <div class="flex gap-3" *ngIf="experience.skills.length > 0">
+        <img class="h-10 object-contain" [src]="stack.link" [alt]="stack.name" *ngFor="let stack of experience.skills" />
+      </div>
     </div>
   </div>
 </div>
