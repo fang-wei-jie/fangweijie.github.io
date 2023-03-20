@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
 import {IExperience} from "../../interface/i-experience";
-import {techStackConstant} from "../../constants/tech-stack-constant";
-import {skillSetConstant} from "../../constants/skill-set-constant";
 
 @Component({
   selector: 'experiences',
@@ -21,14 +19,6 @@ export class ExperiencesComponent {
         "Helped business user to amend data in database, for correcting user input error or system error.",
         "Developed feature enhancements for company’s bond management system and compliance learning assessment system.",
         "Developed enhancements and add-ons for external company's CRM (customer relationship management) system for creating and managing financial advisors’ website."
-      ],
-      skills: [
-        skillSetConstant.appSupport,
-        techStackConstant.angular,
-        techStackConstant.angularJs,
-        techStackConstant.springBoot,
-        techStackConstant.ngZorro,
-        techStackConstant.tailwind
       ]
     },
     {
@@ -39,14 +29,6 @@ export class ExperiencesComponent {
       description: [
         "Developed enhancement for company’s compliance learning and assessment system.",
         "Planned and developed new module for external company's CRM (customer relationship management) system for creating and managing financial advisors’ website."
-      ],
-      skills: [
-        techStackConstant.angular,
-        techStackConstant.angularJs,
-        techStackConstant.springBoot,
-        techStackConstant.ngZorro,
-        techStackConstant.tailwind,
-        techStackConstant.bootstrap3
       ]
     },
     {
@@ -58,8 +40,7 @@ export class ExperiencesComponent {
         "Assisted in organizing reports, verifying vulnerability assessment results.",
         "Participated in social engineering with seniors and other interns.",
         "Carried out a network security automated assessment and reporting with other interns.",
-      ],
-      skills: []
+      ]
     }
   ];
 

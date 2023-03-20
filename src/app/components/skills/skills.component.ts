@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import {ISkill} from "../../interface/i-skill";
+import {languageConstant} from "../../constants/language-constant";
+import {techStackConstant} from "../../constants/tech-stack-constant";
+import {toolConstant} from "../../constants/tool-constant";
 
 @Component({
   selector: 'skills',
@@ -8,20 +11,26 @@ import {ISkill} from "../../interface/i-skill";
 })
 export class SkillsComponent {
   readonly languages: ISkill[] = [
-    { link: "/assets/skills/js.png", name: "JavaScript" },
-    { link: "/assets/skills/java.png", name: "Java" }
+    languageConstant.typeScript,
+    languageConstant.javaScript,
+    languageConstant.java,
+    languageConstant.php
   ]
 
-  readonly technologies: ISkill[] = [
-    { link: "/assets/skills/angular.png", name: "Angular" },
-    { link: "/assets/skills/spring-boot.png", name: "Spring Boot" },
-    { link: "/assets/skills/tailwind-css.png", name: "Tailwind CSS" },
-    { link: "/assets/skills/ng-zorro.png", name: "NG-ZORRO" }
+  readonly frameworks: ISkill[] = [
+    techStackConstant.angular,
+    techStackConstant.angularJs,
+    techStackConstant.springBoot,
+    techStackConstant.tailwind,
+    techStackConstant.ngZorro,
+    techStackConstant.bootstrap5,
+    techStackConstant.laravel,
+    techStackConstant.laravelLivewire
   ]
 
   readonly tools: ISkill[] = [
-    { link: "/assets/skills/IDEA.png", name: "IntelliJ IDEA" },
-    { link: "/assets/skills/vscode.png", name: "VS Code" }
+    toolConstant.idea,
+    toolConstant.vscode
   ]
 
 }
