@@ -11,7 +11,7 @@ export class ExperiencesComponent {
     {
       title: "Software Engineer, IT Specialist",
       company: "iFast Capital Sdn. Bhd.",
-      duration: "Sep 2022 - Present",
+      duration: "Sep 2022 - Feb 2023",
       description: [
         "Worked with business user to plan out system requirements on system enhancements and new developments.",
         "Provided system and application support on company's compliance learning assessment system and bond management system.",
@@ -24,7 +24,7 @@ export class ExperiencesComponent {
     {
       title: "Intern, IT Partnership",
       company: "iFast Capital Sdn. Bhd.",
-      duration: "May - Aug 2022",
+      duration: "May 2022 - Aug 2022",
       description: [
         "Developed enhancement for company’s compliance learning and assessment system.",
         "Planned and developed new module for external company's CRM (customer relationship management) system for creating and managing financial advisors’ website."
@@ -34,7 +34,7 @@ export class ExperiencesComponent {
     {
       title: "IT Security Trainee",
       company: "Condition Zebra (M) Sdn. Bhd.",
-      duration: "Jan - Mar 2020",
+      duration: "Jan 2020 - Mar 2020",
       description: [
         "Assisted in organizing reports, verifying vulnerability assessment results.",
         "Participated in social engineering with seniors and other interns.",

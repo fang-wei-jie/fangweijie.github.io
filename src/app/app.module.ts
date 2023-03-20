@@ -9,7 +9,6 @@ import {HeroComponent} from "./components/hero/hero.component";
 import {AboutMeComponent} from "./components/about-me/about-me.component";
 import {ContactComponent} from "./components/contact/contact.component";
 import {ResumeComponent} from "./components/resume/resume.component";
-import {NavHeaderComponent} from "./components/nav-header/nav-header.component";
 import {ProjectComponent} from "./components/projects/parts/project/project.component";
 import { SkillComponent } from './components/skills/parts/skill/skill.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
@@ -24,7 +23,6 @@ import { ExperienceComponent } from './components/experiences/parts/experience/e
     AboutMeComponent,
     ContactComponent,
     ResumeComponent,
-    NavHeaderComponent,
     ProjectComponent,
     SkillComponent,
     ExperiencesComponent,

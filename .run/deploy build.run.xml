@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ng serve" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="ng serve" />
+  <configuration default="false" name="deploy build" type="ShConfigurationType">
+    <option name="SCRIPT_TEXT" value="ng build --output-path docs --base-href /" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
     <option name="SCRIPT_PATH" value="$PROJECT_DIR$" />
     <option name="SCRIPT_OPTIONS" value="" />

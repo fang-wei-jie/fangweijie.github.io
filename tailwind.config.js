@@ -6,7 +6,11 @@ module.exports = {
     "./src/**/**/**/*.{html,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+      }
+    },
   },
   plugins: [],
 }
