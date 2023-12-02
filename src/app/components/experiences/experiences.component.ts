@@ -11,6 +11,7 @@ export class ExperiencesComponent {
     {
       title: "Software Engineer",
       company: "Bukku",
+      companyLogo: "assets/company_logo/Bukku.png",
       color: "#57b3c3",
       duration: "Since Apr 2023",
       description: [
@@ -23,6 +24,7 @@ export class ExperiencesComponent {
     {
       title: "Software Engineer, IT Specialist",
       company: "iFAST",
+      companyLogo: "assets/company_logo/iFAST.jpeg",
       color: "#014656",
       duration: "Sep 2022 - Feb 2023",
       description: [
@@ -36,6 +38,7 @@ export class ExperiencesComponent {
     {
       title: "Intern, IT Partnership",
       company: "iFAST",
+      companyLogo: "assets/company_logo/iFAST.jpeg",
       color: "#014656",
       duration: "May 2022 - Aug 2022",
       description: [
@@ -46,6 +49,7 @@ export class ExperiencesComponent {
     {
       title: "IT Security Trainee",
       company: "Condition Zebra",
+      companyLogo: "assets/company_logo/ConditionZebra.png",
       color: "#b02024",
       duration: "Jan 2020 - Mar 2020",
       description: [
