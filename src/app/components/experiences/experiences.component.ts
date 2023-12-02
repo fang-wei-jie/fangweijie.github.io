@@ -9,6 +9,18 @@ import {IExperience} from "../../interface/i-experience";
 export class ExperiencesComponent {
   readonly experiences: IExperience[] = [
     {
+      title: "Software Engineer",
+      company: "Bukku",
+      color: "#57b3c3",
+      duration: "Since Apr 2023",
+      description: [
+        "Working on something big and interesting... 🤫",
+        "Contributed to the development of the new Financing feature for Funding Society. ",
+        "Improved aged report flexibility as part of refactoring effort on aged reports to allow reports by days and months.",
+        "Contributed on feature limit and quota limit revamp projects.",
+      ]
+    },
+    {
       title: "Software Engineer, IT Specialist",
       company: "iFAST",
       color: "#014656",
