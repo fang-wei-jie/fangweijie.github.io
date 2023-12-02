@@ -11,26 +11,26 @@ import {toolConstant} from "../../constants/tool-constant";
 })
 export class SkillsComponent {
   readonly languages: ISkill[] = [
+    languageConstant.php,
     languageConstant.typeScript,
     languageConstant.javaScript,
     languageConstant.java,
-    languageConstant.php
   ]
 
   readonly frameworks: ISkill[] = [
+    techStackConstant.laravel,
     techStackConstant.angular,
     techStackConstant.angularJs,
     techStackConstant.springBoot,
     techStackConstant.tailwind,
     techStackConstant.ngZorro,
     techStackConstant.bootstrap5,
-    techStackConstant.laravel,
-    techStackConstant.laravelLivewire
+    techStackConstant.laravelLivewire,
   ]
 
   readonly tools: ISkill[] = [
+    toolConstant.phpStorm,
     toolConstant.idea,
     toolConstant.vscode
   ]
-
 }
